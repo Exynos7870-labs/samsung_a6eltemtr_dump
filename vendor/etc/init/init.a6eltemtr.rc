@@ -1,0 +1,24 @@
+on boot
+# Permissions for Charging
+    chown sdcard_rw sdcard_rw /sys/class/power_supply/battery/store_mode
+
+on fs
+#carrier
+    wait /dev/block/platform/13500000.dwmmc0/by-name/CARRIER
+    mount ext4 /dev/block/platform/13500000.dwmmc0/by-name/CARRIER /carrier nosuid noatime nodev journal_checksum,noauto_da_alloc,discard,data=ordered,errors=panic
+
+# Create carrier folder for HiddenMenu
+on post-fs
+    mkdir /efs/carrier 0755 system system
+	
+# SIMLock Daemon
+on property:sys.mobicoredaemon.enable=true
+    start tsdaemon
+    service tsdaemon /system/bin/tsdaemon
+    class core
+    user system
+    group system
+    oneshot
+    disabled
+
+on post-fs-data
