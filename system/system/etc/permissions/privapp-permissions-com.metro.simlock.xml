@@ -1,0 +1,6 @@
+<permissions>
+    <privapp-permissions package="com.metro.simlock">
+            <permission name="android.permission.REBOOT"/>
+			<permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+</permissions>
