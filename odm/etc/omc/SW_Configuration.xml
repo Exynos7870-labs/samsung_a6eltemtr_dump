@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SW-Configuration>
+    <MobileData>
+        <PublicName>SM-A600T1</PublicName>
+    </MobileData>
+    <OmcYn>Y</OmcYn>
+    <MultiCode>TMK</MultiCode>
+    <CustomerDataSet>
+        <CSCName>A600T1TMK</CSCName>
+        <CSCVersion>8CUA1</CSCVersion>
+        <NbCustomer>1</NbCustomer>
+        <CustomerData src="/Customer/TMK/customer.xml" />
+    </CustomerDataSet>
+    <OmcInfo>
+        <OmcCode>
+            <CustomerCode>TMK</CustomerCode>
+            <Version>SAOMC_SM-A600T1_TMK_TMK_QQ_0011</Version>
+            <CustomerEdition>ED0008</CustomerEdition>
+        </OmcCode>
+    </OmcInfo>
+</SW-Configuration>

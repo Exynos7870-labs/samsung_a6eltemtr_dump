@@ -1,0 +1,115 @@
+{
+  "note": "Enable MaaP service",
+  "imsprofile_update": {
+    "profile": [
+      {
+        "name": "TMobile LTE/WiFi",
+        "mnoname": "TMobile_US",
+        "network": [
+          {
+            "type": "lte,wifi",
+            "services": [
+              "mmtel",
+              "mmtel-video",
+              "smsip",
+              "presence",
+              "im",
+              "ft",
+              "ft_http",
+              "slm",
+              "gls",
+              "euc",
+              "chatbot-communication"
+            ],
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "name": "TMobile 3G",
+        "mnoname": "TMobile_US",
+        "network": [
+          {
+            "type": "hspa,umts,gsm,lte",
+            "services": [
+              "cdpn",
+              "presence",
+              "im",
+              "ft",
+              "ft_http",
+              "slm",
+              "gls",
+              "euc",
+              "chatbot-communication"
+            ],
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "name": "T-Mobile LTE/WiFi Lab",
+        "mnoname": "TMobile_US:LAB",
+        "network": [
+          {
+            "type": "lte,wifi",
+            "services": [
+              "mmtel",
+              "mmtel-video",
+              "smsip",
+              "presence",
+              "im",
+              "ft",
+              "ft_http",
+              "slm",
+              "gls",
+              "euc",
+              "chatbot-communication"
+            ],
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "name": "T-Mobile Jansky 3G Lab",
+        "mnoname": "TMobile_US:LAB",
+        "network": [
+          {
+            "type": "hspa,umts,gsm",
+            "services": [
+              "cdpn",
+              "presence",
+              "im",
+              "ft",
+              "ft_http",
+              "slm",
+              "gls",
+              "euc",
+              "chatbot-communication"
+            ],
+            "enabled": true
+          }
+        ]
+      }
+    ],
+    "remove_profile": [
+    ]
+  },
+  "globalsettings_update": {
+    "defaultsetting": {
+    },
+    "nohitsetting": {
+    },
+    "globalsetting": [
+      {
+        "mnoname": "TMobile_US",
+        "bot_service_id_prefix_list" : "botplatform,rbm,df"
+      }
+    ]
+  },
+  "mnomap_update": {
+      "remove_mnomap": [
+      ],
+      "add_mnomap": [
+      ]
+  }
+}
